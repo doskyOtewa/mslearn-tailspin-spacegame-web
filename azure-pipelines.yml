@@ -9,7 +9,7 @@ steps:
   displayName: 'Use .NET SDK 6.X'
   inputs:
     packageType: sdk
-    version: '6.X'
+    version: '6.x'
 - task: NodeTool@0
   inputs:
     versionSource: 'spec'
