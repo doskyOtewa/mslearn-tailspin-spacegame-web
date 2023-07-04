@@ -10,9 +10,14 @@ steps:
   inputs:
     packageType: sdk
     version: '6.X'
+- task: NodeTool@0
+  inputs:
+    versionSource: 'spec'
+    versionSpec: '18.x'
+  displayName: 'Install Node.js'
 
 - task: Npm@1
-  displayName: 'Run npm install'
+  displayName: 'Run npm install with node v18.16.0'
   inputs:
     verbose: false
 
